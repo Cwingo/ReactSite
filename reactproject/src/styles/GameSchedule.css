@@ -1,0 +1,49 @@
+/* GameScheduleItem.css */
+
+.game-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-color) 0 0px 5px;
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.game-info {
+    flex: 2;
+}
+
+.game-result {
+    flex: 1;
+    text-align: right;
+}
+
+.game-links {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.game-links button {
+    background-color: var(--primary-bg-color);
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game-links button:hover {
+    background-color: #900828;
+}
