@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/reactproject/static/css/main.3581e3a8.css",
+    "main.js": "/reactproject/static/js/main.aaba3e05.js",
+    "static/media/usa_today_17436934.jpg": "/reactproject/static/media/usa_today_17436934.4b0373107f475c7abf60.jpg",
+    "index.html": "/reactproject/index.html",
+    "main.3581e3a8.css.map": "/reactproject/static/css/main.3581e3a8.css.map",
+    "main.aaba3e05.js.map": "/reactproject/static/js/main.aaba3e05.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3581e3a8.css",
+    "static/js/main.aaba3e05.js"
+  ]
+}
