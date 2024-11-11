@@ -1,15 +1,11 @@
- /* Header.css */
-
+/* Header Styling */
 .header {
-    background-color: var(--primary-bg-color);
-    color: var(--primary-font-color);
-    padding: 20px;
-    text-align: center;
-    box-shadow: var(--box-shadow-color) 0 0px 10px;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo-title {
@@ -25,7 +21,7 @@
 
 .header h1 {
     font-size: 1.8em;
-    color: var(--primary-font-color);
+    color: #a60c31;
     margin: 0;
 }
 
@@ -37,11 +33,47 @@ nav ul {
 }
 
 nav ul li a {
-    color: var(--primary-font-color);
+    color: #a60c31;
     text-decoration: none;
     font-size: 1em;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Hamburger menu for mobile */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-font-color);
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav.active ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--primary-bg-color);
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
 }

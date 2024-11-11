@@ -6,14 +6,61 @@ footer {
     padding: 20px 0;
     text-align: center;
     box-shadow: var(--box-shadow-color) 0 0px 5px;
+    width: 100%;
+    position: relative;
+    border-top: 2px solid var(--border-color);
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: var(--primary-font-color);
+}
+
+.footer-links {
+    margin-top: 10px;
 }
 
 .footer-links a {
     color: var(--primary-font-color);
     margin-right: 20px;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
 }
 
 .footer-links a:hover {
+    color: var(--focus-color); /* Optional: a darker color for hover */
     text-decoration: underline;
+}
+
+.footer-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-icons a {
+    color: var(--primary-font-color);
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-icons a:hover {
+    color: var(--focus-color);
+}
+
+@media (max-width: 768px) {
+    .footer-links, .footer-icons {
+        flex-direction: column;
+        align-items: center;
+    }
 }

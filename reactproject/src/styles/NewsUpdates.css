@@ -26,3 +26,19 @@
     font-size: 0.9em;
     color: #000;
 }
+
+
+/* Success Message */
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  

@@ -1,5 +1,5 @@
-import React from 'react';
-import '..styles/TeamRoster.css';
+
+import React, { useState, useEffect } from 'react';
 
 
 const TeamRoster = () => {

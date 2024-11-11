@@ -1,5 +1,6 @@
-import React from 'react';
+
 import '../styles/GameSchedule.css';
+import React, { useState, useEffect } from 'react';
 
 
 const GameSchedule = () => {
