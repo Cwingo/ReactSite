@@ -1,13 +1,12 @@
-
 import '../styles/GameSchedule.css';
 import React, { useState, useEffect } from 'react';
-
 
 const GameSchedule = () => {
     const [games, setGames] = useState([]);
 
     useEffect(() => {
-        fetch('/data/game-schedule.json')
+        // Fetch data from the server endpoint
+        fetch('/api/schedule')
             .then(response => response.json())
             .then(data => setGames(data))
             .catch(error => console.error('Error loading schedule:', error));
@@ -19,9 +18,9 @@ const GameSchedule = () => {
                 <h2>2024 Alabama Football Game Schedule</h2>
                 <div className="games-list">
                     {games.map((game) => (
-                        <div key={game.id} className="game-item">
+                        <div key={game._id} className="game-item">
                             <img 
-                                src={`/imageslogos/${game.logo}`} 
+                                src={`/${game.logo}`} 
                                 alt={`${game.team} Logo`} 
                                 className="team-logo" 
                             />
@@ -39,3 +38,4 @@ const GameSchedule = () => {
 };
 
 export default GameSchedule;
+
