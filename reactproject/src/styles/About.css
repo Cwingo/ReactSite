@@ -1,0 +1,86 @@
+.about-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    color: #a60c31;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+/* AboutSection.css */
+
+.news-item img {
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 300px; /* Set a maximum height for consistency */
+    object-fit: cover; /* Crops image to fill container without stretching */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.about-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    color: #a60c31;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 30px auto;
+}/* About.css */
+
+.secondary-hero {
+    background: url('../images/calebdownsbackground.webp') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.secondary-hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.secondary-hero-content p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}

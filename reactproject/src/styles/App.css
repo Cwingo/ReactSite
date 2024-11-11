@@ -1,0 +1,36 @@
+:root {
+    /* Main Colors */
+    --primary-bg-color: #ffffff;
+    --primary-font-color: #a60c31;
+    --secondary-bg-color: #111;
+    --focus-color: #000000;
+    --border-color: #a60c31;
+    --box-shadow-color: #111;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-font-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+}
+
+/* General Responsive adjustments */
+@media (max-width: 768px) {
+    .bio-link {
+        margin-top: 10px;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
