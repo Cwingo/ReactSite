@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/reactproject/static/css/main.3581e3a8.css",
-    "main.js": "/reactproject/static/js/main.aaba3e05.js",
-    "static/media/usa_today_17436934.jpg": "/reactproject/static/media/usa_today_17436934.4b0373107f475c7abf60.jpg",
+    "main.css": "/reactproject/static/css/main.ab71b438.css",
+    "main.js": "/reactproject/static/js/main.dd84013e.js",
+    "static/media/ryanwilliamsback.jpeg": "/reactproject/static/media/ryanwilliamsback.d3f55eb8f985a25d2335.jpeg",
+    "static/media/calebdownsbackground.webp": "/reactproject/static/media/calebdownsbackground.7f7a0fe8c365f19d12de.webp",
     "index.html": "/reactproject/index.html",
-    "main.3581e3a8.css.map": "/reactproject/static/css/main.3581e3a8.css.map",
-    "main.aaba3e05.js.map": "/reactproject/static/js/main.aaba3e05.js.map"
+    "main.ab71b438.css.map": "/reactproject/static/css/main.ab71b438.css.map",
+    "main.dd84013e.js.map": "/reactproject/static/js/main.dd84013e.js.map"
   },
   "entrypoints": [
-    "static/css/main.3581e3a8.css",
-    "static/js/main.aaba3e05.js"
+    "static/css/main.ab71b438.css",
+    "static/js/main.dd84013e.js"
   ]
 }
