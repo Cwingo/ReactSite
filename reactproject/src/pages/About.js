@@ -24,8 +24,8 @@ function About() {
 
                     <p>Beyond its success in college, Alabama is renowned for producing top talent for the NFL. The program has sent more players to the NFL than any other school, with numerous first-round draft picks and Pro Bowl athletes emerging from the ranks. Alabama’s ability to develop players for the next level is a testament to its exceptional coaching, facilities, and commitment to excellence, making it a breeding ground for future football stars.</p>
 
-                    {/* Absolute URL for the Image */}
-                    <img src="https://cwingo.github.io/reactproject/images/usa_today_17436934.jpg" alt="Alabama Player" className="featured-image" />
+                    
+                    <img src={`${process.env.PUBLIC_URL}/images/usa_today_17436934.jpg`} alt="Alabama Player" className="featured-image" />
                 </div>
             </section>
         </div>
@@ -33,4 +33,3 @@ function About() {
 }
 
 export default About;
-

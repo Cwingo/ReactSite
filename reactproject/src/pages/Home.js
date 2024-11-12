@@ -18,12 +18,12 @@ function Home() {
                     <h2>Latest News</h2>
                     <div className="news-grid">
                         <div className="news-item">
-                            <img src="https://cwingo.github.io/reactproject/images/nicksaban.jpeg" alt="Nick Saban" />
+                            <img src="https://cwingo.github.io/ReactSite/images/nicksaban.jpeg" alt="Nick Saban" />
                             <h3>Nick Saban Discusses Game Strategies</h3>
                             <p>Read more about Coach Saban’s strategy for the upcoming season.</p>
                         </div>
                         <div className="news-item">
-                            <img src="https://cwingo.github.io/reactproject/images/jalenmilore.jpg" alt="Jalen Milroe" />
+                            <img src="https://cwingo.github.io/ReactSite/images/jalenmilore.jpg" alt="Jalen Milroe" />
                             <h3>Jalen Milroe Shines in Practice</h3>
                             <p>The quarterback showcases his skills ahead of the season opener.</p>
                         </div>

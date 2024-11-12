@@ -5,13 +5,13 @@ const newsUpdates = [
     {
         title: "Tide rolls over Georgia",
         summary: "Alabama defeats Georgia in a thrilling victory.",
-        image: "https://cwingo.github.io/reactproject/images/185b375d0ffd2ccd3ad111685a3c068d_Fotor.jpg",
+        image: "https://cwingo.github.io/ReactSite/images/185b375d0ffd2ccd3ad111685a3c068d_Fotor.jpg",
         description: "Alabama secures a win against Georgia with a decisive score, maintaining their lead in the season."
     },
     {
         title: "Victory against the Badgers",
         summary: "The Crimson Tide outplays Wisconsin.",
-        image: "https://cwingo.github.io/reactproject/images/75439668007-usatsi-24356392_Fotor.jpg",
+        image: "https://cwingo.github.io/ReactSite/images/75439668007-usatsi-24356392_Fotor.jpg",
         description: "Alabama outshines Wisconsin in a closely fought match, demonstrating their strength and resilience."
     },
 ];

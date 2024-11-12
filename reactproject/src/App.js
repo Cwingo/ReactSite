@@ -1,35 +1,38 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import './styles/App.css'; // Global CSS file import
+// src/App.js
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import './styles/App.css';
 
 // Importing page components
 import About from './pages/About';
 import NewsUpdates from './pages/NewsUpdates';
 import GameSchedule from './pages/GameSchedule';
 import TeamRoster from './pages/TeamRoster';
-import Home from './pages/Home'; // Make sure this matches the exact file name
+import Home from './pages/Home';
 
-// Main app component
+// Importing additional components
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+
 function App() {
   return (
-    <div className="App">
-      <Header /> {/* Header will be visible on all pages */}
+    <div>
+      <Header /> {/* Header displayed on every page */}
+      <Hero /> {/* Hero section, can be removed or conditionally rendered based on the page */}
       
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/news-updates" element={<NewsUpdates />} />
-        <Route path="/game-schedule" element={<GameSchedule />} />
-        <Route path="/team-roster" element={<TeamRoster />} />
+        <Route path="/" element={<Home />} /> {/* Home page */}
+        <Route path="about" element={<About />} />
+        <Route path="news-updates" element={<NewsUpdates />} />
+        <Route path="game-schedule" element={<GameSchedule />} />
+        <Route path="team-roster" element={<TeamRoster />} />
       </Routes>
-
-      <Footer /> {/* Footer will be visible on all pages */}
+      
+      <Footer /> {/* Footer displayed on every page */}
     </div>
   );
 }
 
 export default App;
-
