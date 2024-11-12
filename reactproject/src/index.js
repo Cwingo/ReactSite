@@ -12,16 +12,20 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const App = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/team-roster" element={<TeamRoster />} />
-        <Route path="/game-schedule" element={<GameSchedule />} />
-        <Route path="/news-updates" element={<NewsUpdates />} />
+        <Route path="about" element={<About />} />
+        <Route path="team-roster" element={<TeamRoster />} />
+        <Route path="game-schedule" element={<GameSchedule />} />
+        <Route path="news-updates" element={<NewsUpdates />} />
       </Routes>
     </BrowserRouter>
   );
 };
 
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
