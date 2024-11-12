@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ReactSite/static/css/main.9297e4d2.css",
-    "main.js": "/ReactSite/static/js/main.58648f14.js",
+    "main.css": "/ReactSite/static/css/main.70d0b537.css",
+    "main.js": "/ReactSite/static/js/main.4d2baf7c.js",
     "static/media/ryanwilliamsback.jpeg": "/ReactSite/static/media/ryanwilliamsback.d3f55eb8f985a25d2335.jpeg",
     "static/media/calebdownsbackground.webp": "/ReactSite/static/media/calebdownsbackground.7f7a0fe8c365f19d12de.webp",
     "index.html": "/ReactSite/index.html",
-    "main.9297e4d2.css.map": "/ReactSite/static/css/main.9297e4d2.css.map",
-    "main.58648f14.js.map": "/ReactSite/static/js/main.58648f14.js.map"
+    "main.70d0b537.css.map": "/ReactSite/static/css/main.70d0b537.css.map",
+    "main.4d2baf7c.js.map": "/ReactSite/static/js/main.4d2baf7c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9297e4d2.css",
-    "static/js/main.58648f14.js"
+    "static/css/main.70d0b537.css",
+    "static/js/main.4d2baf7c.js"
   ]
 }
