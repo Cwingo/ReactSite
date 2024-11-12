@@ -1,14 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/App.css'; 
+import Home from './pages/Home';
+import About from './pages/About';
+import TeamRoster from './pages/TeamRoster';
+import GameSchedule from './pages/GameSchedule';
+import NewsUpdates from './pages/NewsUpdates';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+
+const App = () => {
+  return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <App />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/team-roster" element={<TeamRoster />} />
+        <Route path="/game-schedule" element={<GameSchedule />} />
+        <Route path="/news-updates" element={<NewsUpdates />} />
+      </Routes>
     </BrowserRouter>
-  </React.StrictMode>
-);
+  );
+};
+
+root.render(<App />);

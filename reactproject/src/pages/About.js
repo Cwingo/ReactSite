@@ -5,8 +5,6 @@ import '../styles/About.css';
 function About() {
     return (
         <div>
-     
-
             {/* Secondary Hero Section */}
             <section className="secondary-hero">
                 <div className="hero-content">
@@ -26,16 +24,10 @@ function About() {
 
                     <p>Beyond its success in college, Alabama is renowned for producing top talent for the NFL. The program has sent more players to the NFL than any other school, with numerous first-round draft picks and Pro Bowl athletes emerging from the ranks. Alabama’s ability to develop players for the next level is a testament to its exceptional coaching, facilities, and commitment to excellence, making it a breeding ground for future football stars.</p>
 
-                    <img src={`${process.env.PUBLIC_URL}/images/usa_today_17436934.jpg`} alt="Alabama Player" className="featured-image" />
+                    {/* Absolute URL for the Image */}
+                    <img src="https://cwingo.github.io/reactproject/images/usa_today_17436934.jpg" alt="Alabama Player" className="featured-image" />
                 </div>
             </section>
-
-            {/* Footer */}
-            <footer>
-                <div className="container">
-                    <p>&copy; 2024 Alabama Football RTR. All rights reserved.</p>
-                </div>
-            </footer>
         </div>
     );
 }
