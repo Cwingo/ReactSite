@@ -1,7 +1,7 @@
 /* Hero.css */
 
 .hero {
-    background: url('images/ryanwilliamsback.jpeg') no-repeat center center/cover;
+    background-image: url('../images/ryanwilliamsback.jpeg'); 
     height: 500px;
     display: flex;
     align-items: center;

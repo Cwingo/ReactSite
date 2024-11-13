@@ -43,3 +43,14 @@
 .bio-link:hover {
     color: #900828;
 }
+
+.third-hero {
+    background: url('../images/footballteam.webp') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}

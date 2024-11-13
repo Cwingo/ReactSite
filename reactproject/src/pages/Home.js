@@ -4,13 +4,7 @@ import '../styles/Home.css';
 function Home() {
     return (
         <div>
-            {/* Hero Section */}
-            <section className="hero">
-                <div className="hero-content">
-                    <h2>Welcome to Alabama Football RTR</h2>
-                    <p>The Ultimate Alabama Football Fan Hub</p>
-                </div>
-            </section>
+           
 
             {/* Latest News Section */}
             <section className="latest-news">
@@ -39,11 +33,12 @@ function Home() {
                         <iframe
                             width="100%"
                             height="400"
-                            src="https://www.youtube.com/embed/007UHPLIScw"
+                            src="https://www.youtube.com/embed/2X5rnY3PKtk?si=MYX-XMP-FVnbp3cC"
+                            title="YouTube video player"
                             frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
-                            title="Recent Highlights"
                         ></iframe>
                     </div>
                 </div>
