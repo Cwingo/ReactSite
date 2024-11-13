@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ReactSite/static/css/main.118bf0bc.css",
-    "main.js": "/ReactSite/static/js/main.0a64f592.js",
+    "main.js": "/ReactSite/static/js/main.7f088c42.js",
     "static/media/footballteam.webp": "/ReactSite/static/media/footballteam.d7a71f529634347bf709.webp",
     "static/media/ryanwilliamsback.jpeg": "/ReactSite/static/media/ryanwilliamsback.d3f55eb8f985a25d2335.jpeg",
     "static/media/calebdownsbackground.webp": "/ReactSite/static/media/calebdownsbackground.7f7a0fe8c365f19d12de.webp",
     "index.html": "/ReactSite/index.html",
     "main.118bf0bc.css.map": "/ReactSite/static/css/main.118bf0bc.css.map",
-    "main.0a64f592.js.map": "/ReactSite/static/js/main.0a64f592.js.map"
+    "main.7f088c42.js.map": "/ReactSite/static/js/main.7f088c42.js.map"
   },
   "entrypoints": [
     "static/css/main.118bf0bc.css",
-    "static/js/main.0a64f592.js"
+    "static/js/main.7f088c42.js"
   ]
 }
