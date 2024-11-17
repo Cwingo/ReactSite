@@ -1,41 +1,41 @@
-import '../styles/GameSchedule.css';
 import React, { useState, useEffect } from 'react';
+import '../styles/GameSchedule.css';
+import API_BASE_URL from '../config'; // Import the base URL from config
 
-const GameSchedule = () => {
+function GameSchedule() {
     const [games, setGames] = useState([]);
 
     useEffect(() => {
-        // Fetch data from the server endpoint
-        fetch('/api/schedule')
-            .then(response => response.json())
-            .then(data => setGames(data))
-            .catch(error => console.error('Error loading schedule:', error));
+        fetch(`${API_BASE_URL}/api/schedule`)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch game schedule');
+                }
+                return response.json();
+            })
+            .then((data) => setGames(data))
+            .catch((error) => console.error('Error loading schedule:', error));
     }, []);
 
     return (
         <section className="game-schedule">
-            <div className="container">
-                <h2>2024 Alabama Football Game Schedule</h2>
-                <div className="games-list">
-                    {games.map((game) => (
-                        <div key={game._id} className="game-item">
-                            <img 
-                                src={`/${game.logo}`} 
-                                alt={`${game.team} Logo`} 
-                                className="team-logo" 
-                            />
-                            <div className="game-info">
-                                <p className="game-team">{game.team}</p>
-                                <p className="game-date-location">{game.date} - {game.location}</p>
-                                <p className="game-result">Result: {game.result}</p>
-                            </div>
-                        </div>
-                    ))}
+            <h2>2024 Alabama Football Game Schedule</h2>
+            {games.map((game) => (
+                <div className="game-item" key={game._id}>
+                    <div className="game-info">
+                        <img
+                            src={`${API_BASE_URL}/imageslogos/${game.logo}`} // Dynamic logo from API
+                            alt={`${game.team} Logo`}
+                            className="team-logo"
+                        />
+                        <h3>{game.team}</h3>
+                        <p>{game.date} - {game.location}</p>
+                        <p>Result: {game.result}</p>
+                    </div>
                 </div>
-            </div>
+            ))}
         </section>
     );
-};
+}
 
 export default GameSchedule;
-

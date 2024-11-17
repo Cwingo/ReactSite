@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/GameSchedule.css';
-import gameSchedule from '../data/game-schedule.json';
-
 
 function GameSchedule() {
+    const [gameSchedule, setGameSchedule] = useState([]);
+
+    useEffect(() => {
+        // Fetch game schedule data from the deployed API
+        fetch('https://projectapi-qow8.onrender.com/api/schedule') // Using deployed API
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch game schedule');
+                }
+                return response.json();
+            })
+            .then((data) => setGameSchedule(data))
+            .catch((error) => console.error('Error loading schedule:', error));
+    }, []);
+
     return (
         <div>
-         
-
             {/* Record Menu Section */}
             <section className="record-menu">
                 <div className="container">
@@ -17,7 +28,9 @@ function GameSchedule() {
                     </div>
                     <div className="record-stat">
                         <h3>Streak</h3>
-                        <p><span className="green-dot"></span> W1</p>
+                        <p>
+                            <span className="green-dot"></span> W1
+                        </p>
                     </div>
                     <div className="record-stat">
                         <h3>Home</h3>

@@ -34,3 +34,13 @@ main {
         grid-template-columns: 1fr;
     }
 }
+.error {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  .success {
+    color: green;
+    font-size: 0.9em;
+  }
+  
